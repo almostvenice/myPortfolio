@@ -21,7 +21,6 @@ function App() {
       .then((res) => res.json())
       .then(
         (result) => {
-          console.log(result);
           setGithubBio(result.bio)
           setAvatarURL(result.avatar_url)
         },
