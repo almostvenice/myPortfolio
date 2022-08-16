@@ -3,7 +3,30 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FormGroup, Label, Input, Button, Form } from "reactstrap";
 import "./contactForm.css";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import emailjs from "emailjs-com";
+
 function ContactForm() {
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_qd0an2r",
+        "template_597htjp",
+        e.target,
+        "JT_puhZf1BF1TLr6h"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <div
       style={{
@@ -26,7 +49,7 @@ function ContactForm() {
         />
       </Player>
       <h5 className="text-white text-center">Contact Me For An Interview</h5>
-      <Form>
+      <Form onSubmit={sendEmail}>
         <FormGroup>
           <Label htmlFor="name" className="text-white"></Label>
           <Input
