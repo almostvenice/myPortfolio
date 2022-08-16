@@ -1,0 +1,41 @@
+/* unvisited link */
+.cardLinks:link {
+    color: red;
+  }
+  
+  /* visited link */
+  .cardLinks:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  .cardLinks:hover {
+    color: darkcyan;
+    cursor: pointer;
+  }
+
+  .cardLinks{
+    text-align: center;
+    width: 30px;
+  }
+
+  #myCards{
+    width: 15rem;
+    height: 18rem;
+    margin: 10px;
+    background: black;
+  }
+
+  .theseCards {
+   color: azure;
+  }
+  
+  @media (max-width: 779px ) {
+    #myCards {
+        width: 10rem;
+        height: 12rem;
+    }
+    #cardDescription{
+        display: none;
+    }
+  }

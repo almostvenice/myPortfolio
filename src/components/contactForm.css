@@ -1,0 +1,28 @@
+.bor {
+    border: 5px solid rgb(1, 165, 165);
+    border-radius: 3%;
+    background-color: rgb(1, 165, 165);
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    height: 500px;
+    
+}
+
+#contactForm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    /* position: absolute; */
+    background-color: rgb(9, 9, 9);
+    display: block;
+    
+}
+
+@media only screen and (max-width: 775px){
+    
+    .bor{
+        height: 400px;
+    }
+}

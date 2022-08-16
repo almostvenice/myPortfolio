@@ -1,0 +1,20 @@
+.site-footer{
+    background-color: black;
+}
+
+
+/* unvisited link */
+.btn-link:link {
+    color: rgb(1, 165, 165);
+}
+
+/* visited link */
+.btn-link:visited {
+    color: green;
+}
+
+/* mouse over link */
+.btn-link:hover {
+    color: blue;
+    cursor: pointer;
+}

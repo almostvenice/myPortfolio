@@ -1,0 +1,14 @@
+.nav-link{
+    cursor: pointer;
+}
+
+#resumeDownload{
+    background-color: rgb(1, 165, 165);
+    border-radius: 10px;
+}
+
+#resumeDownload:active {
+    background-color: rgb(1, 165, 165);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }

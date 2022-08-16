@@ -1,0 +1,105 @@
+
+.headerCont{
+  height: 100vh;
+}
+
+.bodyCont{
+  height: 75vh;
+  background-color: #000000;
+  color: white;
+  font-size: 4rem;
+}
+
+.App{
+  background-color: rgb(176,176,176);
+}
+
+
+.navbar-dark {
+  background-image: linear-gradient(to right, #0c0c0c, #4c4d50, #000000);
+  min-height: 4rem;
+}
+
+.projectsSection{
+  background-color: #1c1c1d;
+}
+
+#parallaxInfo {
+  background-color: #000000;
+  position: absolute;
+  height: 800px;
+  width: 500px;
+  right: 10px;
+  border-radius: 0px;
+  z-index: 1;
+  top: 7rem;
+  opacity: .85;
+  border: 2px solid rgb(1, 165, 165);
+  border-radius: 50px;
+  align-items: center;
+  text-align: center;
+  padding: 10px 35px;
+  font-size: 1.33rem;
+  color: darkcyan;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#profileImg {
+  position: relative;
+  border-radius: 100px;
+  width: 330px;
+  height: 300px;
+  
+  margin-bottom: 10px;
+}
+.bob-info-2 {
+  color: rgb(1, 165, 165);
+}
+
+#myBio{
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+#laptop{
+  width: 100vw;
+  height: 110vh;
+}
+
+@media (max-width: 779px ) {
+  #laptop{
+    width: 150vh;
+  }
+}
+
+@media (max-width:1400px) {
+  #parallaxInfo {
+       visibility: hidden;   
+  }
+}
+
+@media (max-height: 900px) {
+  #parallaxInfo {
+    visibility: hidden;   
+}
+}
+
+.bob{
+  position: absolute;
+  
+}
+
+@media (max-width: 110rem) {
+#profileImg {
+  visibility: visible;
+    height: 150px;
+    width: 200px;
+    top: 50%;
+    left: 25%;   
+  }
+  
+}

@@ -1,0 +1,152 @@
+.introCont{
+    position: absolute;
+    display: flex;
+    color: black;
+    bottom: 33%;
+    width: 75%;
+    height: 50vh;
+    /* background-color: black; */
+  }
+
+  .left-wrapper{
+    padding: 33px;
+  }
+
+  .introGreet{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .introName{
+    font-size: 60px;
+  }
+
+  .intro-title{
+    height: 60px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: black;
+    opacity: 0.75;
+    
+  }
+
+  .title-item{
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(1, 165, 165);
+    display: flex;
+    align-items: center;
+   
+ 
+  }
+
+  .title-wrapper{
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+    
+  }
+  
+  @keyframes move {
+    50%{
+      transform: translateY(-60px);
+    }
+    100%{
+      transform: translateY(-120px);
+    }
+    
+  }
+  
+.hiddenSpan{
+  opacity: 0;
+}
+
+
+@media (min-width: 769px) {
+  .slideA{
+  position: absolute;
+  top: 10px;
+  right:18rem;
+  width:100px;
+  /* height:100px; */
+  transition-delay: 1s;
+  animation:animate 4s;
+  }
+  
+  @keyframes animate{
+  
+   /* from{
+   left:0rem;
+   } 
+   to{
+   right:94.6rem;
+   } */
+    0% {
+    transform: translateX(-2000%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  } 
+  .slideB{
+  position: absolute;
+  top: 10px;
+  right: 12rem;
+  width:100px;
+  transition-delay: 1s;
+  
+  animation:animateB 3s;
+  }
+  
+  @keyframes animateB{
+  
+    0% {
+      transform: translateX(-2000%);
+      }
+    100% {
+        transform: translateX(0);
+    }
+  } 
+  .slideC{
+  position: absolute;
+  top: 10px;
+  right:6.5rem;
+  width:100px;
+  transition-delay: 1s;
+  
+  animation:animateC 2s;
+  }
+  
+  @keyframes animateC{
+  
+    0% {
+      transform: translateX(-2000%);
+      }
+    100% {
+        transform: translateX(0);
+    }
+  } 
+  
+  
+  .slideD{
+  position: absolute;
+  top: 10px;
+  right:0rem;
+  width:100px;  
+  
+  animation:animateD 1s;
+  }
+  
+  @keyframes animateD{
+  
+    0% {
+      transform: translateX(-2000%);
+      }
+    100% {
+        transform: translateX(0);
+    }
+  } 
+  
+}
+
