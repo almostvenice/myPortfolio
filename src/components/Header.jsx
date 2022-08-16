@@ -9,26 +9,34 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-scroll";
 import "./header.css";
-import Axios from "axios"
-import FileDownload from "js-file-download"
+import Axios from "axios";
+import FileDownload from "js-file-download";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const download=(e) => {
-    e.preventDefault()
+  const download = (e) => {
+    e.preventDefault();
     Axios({
       url: "http://localhost:4000",
       method: "GET",
-      responseType: "blob"
-    }).then(res => {
-      FileDownload(res.data, "DavidResume.pdf")
-    })
-  }
+      responseType: "blob",
+    }).then((res) => {
+      FileDownload(res.data, "DavidResume.pdf");
+    });
+  };
 
   return (
     <Navbar dark color="primary" fixed="top" expand="md">
-      <button id="resumeDownload" onClick={e => download(e)}>Download Resume <FaDownload/></button>
+      <a
+        a
+        href={require("../app/assets/DavidResume.pdf")}
+        download="DavidPreciadoResume"
+      >
+        <button id="resumeDownload">
+          Download Resume <FaDownload />
+        </button>
+      </a>
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>
         <Nav className="ms-auto" navbar>
