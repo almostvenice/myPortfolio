@@ -29,7 +29,6 @@ const Header = () => {
   return (
     <Navbar dark color="primary" fixed="top" expand="md">
       <a
-        a
         href={require("../app/assets/DavidResume.pdf")}
         download="DavidPreciadoResume"
       >
